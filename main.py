@@ -20,3 +20,11 @@ encoder1 = Navigation.Encoder("Digital","Optical")
 #Nav System calls for location data
 navSys.callForLocationData()
 
+#Nav classes supply info to Nav controller
+cam1.scanBarcode()
+cam1.sendCurrentLocation()
+accel1.detectAccelRate()
+rateG.measureAngularVelocity()
+encoder1.detectWheelOrientation()
+
+navSys.locateDestination()
